@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <button type="submit" class="w-full bg-green-400 text-white py-2 mt-10 hover:bg-green-500 transition-colors">Sign In</button>
+        <x-forms.submit>Sign In</x-forms.submit>
         <a href="{{ route('password.request') }}" class="block mt-3 text-green-600 hover:text-green-700">Forgot password ?</a>
     </form>
 </x-layout>

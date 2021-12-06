@@ -20,6 +20,6 @@
             </div>
         </div>
 
-        <button type="submit" class="w-full bg-green-400 text-white py-2 mt-10 hover:bg-green-500 transition-colors">Request reset link</button>
+        <x-forms.submit>Request reset link</x-forms.submit>
     </form>
 </x-layout>
