@@ -25,10 +25,10 @@
                 <br>
                 Click the button below to have another email sent to you if you did not receive one.
             </p>
-                <form action="/email/verification-notification" method="POST">
-                    @csrf
-                    <button type="submit" class="bg-green-400 text-white p-2 mt-4 rounded hover:bg-green-500">Resend verification Email</button>
-                </form>
+            <form action="/email/verification-notification" method="POST">
+                @csrf
+                <x-forms.submit>Resend verification Email</x-forms.submit>
+            </form>
         </div>
     </main>
 </body>
