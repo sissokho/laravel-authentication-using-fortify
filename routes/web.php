@@ -17,4 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/dashboard', 'dashboard')->middleware('verified');
+Route::view('/dashboard', 'dashboard')
+    ->middleware('verified')
+    ->name('dashboard');

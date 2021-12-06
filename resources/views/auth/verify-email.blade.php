@@ -25,7 +25,7 @@
                 <br>
                 Click the button below to have another email sent to you if you did not receive one.
             </p>
-            <form action="/email/verification-notification" method="POST">
+            <form action="{{ route('verfication.send') }}" method="POST">
                 @csrf
                 <x-forms.submit>Resend verification Email</x-forms.submit>
             </form>
