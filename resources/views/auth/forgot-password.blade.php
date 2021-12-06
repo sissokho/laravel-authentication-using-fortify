@@ -14,9 +14,7 @@
                 <label for="email">Email address</label>
                 <input type="email" name="email" id="email" value="{{ old('email') }}" class="border border-gray-200 bg-gray-100 text-gray-700 p-1 rounded-sm focus:outline-none focus:border-gray-300">
 
-                @error('email')
-                    <span class="text-sm text-red-500 mt-1">{{ $message }}</span>
-                @enderror
+                <x-forms.error name="email" />
             </div>
         </div>
 
