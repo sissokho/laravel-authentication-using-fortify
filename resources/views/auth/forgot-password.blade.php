@@ -11,10 +11,7 @@
         @csrf
         <div class="space-y-6">
             <div class="flex flex-col">
-                <label for="email">Email address</label>
-                <input type="email" name="email" id="email" value="{{ old('email') }}" class="border border-gray-200 bg-gray-100 text-gray-700 p-1 rounded-sm focus:outline-none focus:border-gray-300">
-
-                <x-forms.error name="email" />
+                <x-forms.input type="email" name="email" />
             </div>
         </div>
 
